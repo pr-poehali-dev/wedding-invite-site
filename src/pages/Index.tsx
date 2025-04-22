@@ -1,12 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Button } from "@/components/ui/button";
+import { Calendar, Heart } from "lucide-react";
+import WeddingHero from "@/components/WeddingHero";
+import EventDetails from "@/components/EventDetails";
+import ProgramSection from "@/components/ProgramSection";
+import RsvpForm from "@/components/RsvpForm";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-rose-50">
+      {/* Главный баннер */}
+      <WeddingHero />
+
+      {/* Детали мероприятия */}
+      <EventDetails />
+
+      {/* Программа мероприятия */}
+      <ProgramSection />
+
+      {/* Форма подтверждения */}
+      <RsvpForm />
+
+      {/* Подвал сайта */}
+      <footer className="py-8 text-center text-rose-600">
+        <Heart className="inline-block mr-1 h-4 w-4" />
+        <span className="text-sm">С любовью, Анна и Михаил</span>
+      </footer>
     </div>
   );
 };
