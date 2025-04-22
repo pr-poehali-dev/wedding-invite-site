@@ -1,5 +1,5 @@
 
-import { Camera, Music, Utensils, GlassWine } from "lucide-react";
+import { Camera, Music, Utensils, Wine } from "lucide-react";
 
 const ProgramSection = () => {
   return (
@@ -25,7 +25,7 @@ const ProgramSection = () => {
                 </p>
               </div>
               <div className="bg-white p-4 rounded-full border border-rose-200 z-10">
-                <GlassWine className="h-6 w-6 text-rose-500" />
+                <Wine className="h-6 w-6 text-rose-500" />
               </div>
               <div className="md:w-1/2 md:pl-12 hidden md:block"></div>
             </div>
