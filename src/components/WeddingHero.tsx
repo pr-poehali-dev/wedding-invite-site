@@ -3,44 +3,25 @@ import { Heart } from "lucide-react";
 
 const WeddingHero = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-[80vh] overflow-hidden bg-gradient-to-b from-rose-100 to-rose-50 px-4">
-      {/* Декоративные элементы */}
-      <div className="absolute inset-0 overflow-hidden opacity-10">
-        <div className="absolute top-10 left-10 transform rotate-12">
-          <Heart size={80} className="text-rose-300" />
-        </div>
-        <div className="absolute bottom-10 right-10 transform -rotate-12">
-          <Heart size={80} className="text-rose-300" />
-        </div>
-      </div>
-      
-      {/* Основное содержимое */}
-      <div className="text-center z-10 max-w-3xl mx-auto">
-        <p className="text-rose-500 font-medium mb-4">Мы женимся!</p>
-        <h1 className="text-4xl md:text-6xl font-bold text-rose-800 mb-6">
-          Анна & Михаил
-        </h1>
-        <div className="h-0.5 w-20 bg-rose-300 mx-auto mb-6"></div>
-        <p className="text-lg md:text-xl text-rose-700 mb-8">
-          С радостью приглашаем вас на наше торжество
-        </p>
-        <div className="text-3xl md:text-4xl font-semibold text-rose-600 mb-2">
-          20 июля 2024
-        </div>
-        <p className="text-rose-500">
-          Просим подтвердить ваше присутствие до 1 июля
-        </p>
-        
-        <div className="mt-12">
-          <a 
-            href="#rsvp" 
-            className="bg-rose-600 hover:bg-rose-700 text-white font-medium py-3 px-8 rounded-full transition-colors duration-300"
-          >
-            Подтвердить присутствие
-          </a>
+    <section className="relative bg-rose-100 overflow-hidden">
+      <div className="absolute inset-0 opacity-10 bg-[url('/placeholder.svg')] bg-center bg-cover"></div>
+      <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="mb-6 flex justify-center">
+            <Heart className="text-rose-500 h-12 w-12 animate-pulse" />
+          </div>
+          <h1 className="font-serif text-3xl md:text-5xl mb-4 text-rose-800">Анна и Михаил</h1>
+          <p className="text-lg md:text-xl text-rose-700 mb-3">приглашают вас на свою свадьбу</p>
+          <div className="w-24 h-1 bg-rose-400 mx-auto my-6"></div>
+          <p className="text-xl md:text-3xl font-semibold text-rose-900 mb-8">15 августа 2024</p>
+          <div className="inline-block border-2 border-rose-300 rounded-lg px-10 py-6 bg-white/80 backdrop-blur shadow-md">
+            <p className="text-rose-600 italic">
+              Мы с радостью приглашаем вас разделить с нами один из самых важных дней в нашей жизни
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

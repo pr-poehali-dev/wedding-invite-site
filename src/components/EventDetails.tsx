@@ -1,54 +1,53 @@
 
-import { MapPin, Clock, CalendarDays } from "lucide-react";
+import { Clock, MapPin, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const EventDetails = () => {
   return (
-    <div className="py-16 bg-white">
-      <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-rose-800 mb-12">
-          Детали торжества
-        </h2>
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl text-center text-rose-800 font-serif mb-12">Детали торжества</h2>
         
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Дата */}
-          <div className="text-center p-6 border border-rose-100 rounded-lg hover:shadow-md transition-shadow">
-            <div className="w-16 h-16 bg-rose-50 rounded-full flex items-center justify-center mx-auto mb-4">
-              <CalendarDays className="h-8 w-8 text-rose-600" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="bg-rose-50 p-6 rounded-lg text-center transition-transform hover:scale-105 duration-300">
+            <div className="flex justify-center mb-4">
+              <Calendar className="h-10 w-10 text-rose-600" />
             </div>
             <h3 className="text-xl font-semibold text-rose-700 mb-2">Дата</h3>
-            <p className="text-rose-600">20 июля 2024 года</p>
-            <p className="text-rose-600">Суббота</p>
+            <p className="text-rose-900">15 августа 2024</p>
+            <p className="text-rose-600 mt-2">Четверг</p>
           </div>
           
-          {/* Время */}
-          <div className="text-center p-6 border border-rose-100 rounded-lg hover:shadow-md transition-shadow">
-            <div className="w-16 h-16 bg-rose-50 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Clock className="h-8 w-8 text-rose-600" />
+          <div className="bg-rose-50 p-6 rounded-lg text-center transition-transform hover:scale-105 duration-300">
+            <div className="flex justify-center mb-4">
+              <Clock className="h-10 w-10 text-rose-600" />
             </div>
             <h3 className="text-xl font-semibold text-rose-700 mb-2">Время</h3>
-            <p className="text-rose-600">Сбор гостей в 15:00</p>
-            <p className="text-rose-600">Начало церемонии в 16:00</p>
+            <p className="text-rose-900">Начало в 15:00</p>
+            <p className="text-rose-600 mt-2">Просим не опаздывать</p>
           </div>
           
-          {/* Место */}
-          <div className="text-center p-6 border border-rose-100 rounded-lg hover:shadow-md transition-shadow">
-            <div className="w-16 h-16 bg-rose-50 rounded-full flex items-center justify-center mx-auto mb-4">
-              <MapPin className="h-8 w-8 text-rose-600" />
+          <div className="bg-rose-50 p-6 rounded-lg text-center transition-transform hover:scale-105 duration-300">
+            <div className="flex justify-center mb-4">
+              <MapPin className="h-10 w-10 text-rose-600" />
             </div>
             <h3 className="text-xl font-semibold text-rose-700 mb-2">Место</h3>
-            <p className="text-rose-600">Загородный клуб "Сосновый бор"</p>
-            <p className="text-rose-600">ул. Лесная, 123</p>
+            <p className="text-rose-900">Ресторан "Лесная сказка"</p>
+            <p className="text-rose-600 mt-2">ул. Лесная, 123</p>
           </div>
         </div>
         
-        <div className="mt-12 text-center">
-          <p className="text-rose-700 max-w-2xl mx-auto">
-            Будем рады разделить с вами наш особенный день. Пожалуйста, приходите вовремя, 
-            чтобы насладиться каждым моментом нашего праздника!
-          </p>
+        <div className="flex justify-center mt-12">
+          <Button 
+            className="bg-rose-600 hover:bg-rose-700 text-white"
+            onClick={() => window.open("https://maps.google.com", "_blank")}
+          >
+            <MapPin className="h-4 w-4 mr-2" />
+            Открыть карту
+          </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

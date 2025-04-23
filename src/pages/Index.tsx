@@ -1,6 +1,5 @@
 
-import { Button } from "@/components/ui/button";
-import { Calendar, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
 import WeddingHero from "@/components/WeddingHero";
 import EventDetails from "@/components/EventDetails";
 import ProgramSection from "@/components/ProgramSection";
@@ -22,9 +21,10 @@ const Index = () => {
       <RsvpForm />
 
       {/* Подвал сайта */}
-      <footer className="py-8 text-center text-rose-600">
+      <footer className="py-8 text-center text-rose-600 bg-white">
         <Heart className="inline-block mr-1 h-4 w-4" />
         <span className="text-sm">С любовью, Анна и Михаил</span>
+        <p className="text-xs text-rose-400 mt-2">2024</p>
       </footer>
     </div>
   );
