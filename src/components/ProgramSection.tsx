@@ -1,6 +1,5 @@
 
 import { Clock, Music, Camera, Utensils, Wine } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
 
 const ProgramSection = () => {
   return (

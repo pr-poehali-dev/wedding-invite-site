@@ -14,8 +14,8 @@ const EventDetails = () => {
               <Calendar className="h-10 w-10 text-rose-600" />
             </div>
             <h3 className="text-xl font-semibold text-rose-700 mb-2">Дата</h3>
-            <p className="text-rose-900">15 августа 2024</p>
-            <p className="text-rose-600 mt-2">Четверг</p>
+            <p className="text-rose-900">28 июня 2025</p>
+            <p className="text-rose-600 mt-2">Суббота</p>
           </div>
           
           <div className="bg-rose-50 p-6 rounded-lg text-center transition-transform hover:scale-105 duration-300">
